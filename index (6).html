@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UNIQUE Botanicals | Natural Coconut Oil Soap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf9f6;--alt:#f5f3f0;--g:#183126;--g2:#2e473b;--tx:#424844;--mu:#665d56;--sand:#eee0d7;--mint:rgba(204,233,217,.4);--serif:"Liberation Serif","Times New Roman",Times,serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.5}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:1.1px;text-transform:uppercase;color:var(--g2)}
+.h2{font-family:var(--serif);font-size:40px;line-height:48px;letter-spacing:-.4px;color:var(--g);font-weight:400}
+.lead{font-size:18px;line-height:28px;color:var(--mu)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 32px;border-radius:999px;background:var(--g);color:#fff;font:600 14px/20px "Plus Jakarta Sans",sans-serif;letter-spacing:.7px;text-transform:uppercase;border:0;cursor:pointer;box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);transition:.2s}
+.btn:hover{background:var(--g2)}
+.btn.w{background:#fff;color:var(--g);box-shadow:0 1px 1px rgba(0,0,0,.05)}
+.sec{padding:80px 40px}.in{max-width:1200px;margin:0 auto;padding:0 32px}
+.head{text-align:center;max-width:672px;margin:0 auto 56px;display:flex;flex-direction:column;gap:8px;align-items:center}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:#fff;border-radius:16px;padding:24px;box-shadow:0 1px 1px rgba(0,0,0,.05)}
+.card h3{font-size:18px;line-height:26px;font-weight:600;color:var(--g);letter-spacing:-.09px;margin:8px 0}
+.card p{font-size:15px;line-height:24px}
+.ico{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;background:var(--mint)}
+.ico.s{background:rgba(238,224,215,.5)}
+.tag{display:block;margin-top:24px;padding-top:16px;font-size:11px;font-weight:600;letter-spacing:.66px;text-transform:uppercase;color:var(--mu)}
+.stars{color:#c9973a;letter-spacing:0;font-size:15px}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(251,249,246,.95);backdrop-filter:blur(6px);box-shadow:0 1px 8px rgba(0,0,0,.04)}
+.top{background:var(--sand);color:#4e453f;font-size:11px;font-weight:600;letter-spacing:.55px;text-transform:uppercase;text-align:center;padding:4px 32px;line-height:16px}
+.nav{max-width:1200px;margin:0 auto;height:80px;padding:0 32px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:8px;font:700 22px/30px var(--serif);letter-spacing:-.55px;color:var(--g);white-space:nowrap}
+.logo img{width:32px;height:32px;object-fit:cover}
+.links{display:flex;gap:24px;font-size:14px;font-weight:600;letter-spacing:.42px;color:#424844}
+.links a:first-child{font-size:15px;font-weight:700;color:var(--g)}
+.hb{display:flex;align-items:center;gap:16px}
+.hb .btn{padding:8px 24px}
+.circ{width:32px;height:32px;border-radius:50%;background:var(--g);color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px}
+/* hero */
+.hero{padding:80px 72px}
+.hero .g{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;max-width:1136px;margin:0 auto}
+.chip{display:inline-flex;gap:4px;align-items:center;padding:4px 16px;border-radius:999px;background:rgba(204,233,217,.6);box-shadow:0 1px 2px rgba(0,0,0,.05);font-size:15px;letter-spacing:.75px;text-transform:uppercase;color:var(--g)}
+h1{font-family:"Playfair Display",var(--serif);font-weight:500;font-size:56px;line-height:70px;letter-spacing:-1.12px;color:var(--g);margin-top:16px}
+h1 em{font-weight:400;color:var(--g2)}
+.hero p.lead{margin:16px 0;max-width:520px;line-height:29.25px}
+.btns{display:flex;gap:16px;flex-wrap:wrap;padding-top:8px}
+.spec{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px;font-size:15px;letter-spacing:.75px;text-transform:uppercase;color:var(--mu)}
+.spec i{font-style:normal;color:#c2c8c2}
+.pic{position:relative;border-radius:16px;overflow:hidden;background:var(--alt);box-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);aspect-ratio:1;max-width:540px;margin-left:auto;width:100%}
+.pic img{width:100%;height:100%;object-fit:cover}
+.pic:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(24,49,38,.3),rgba(24,49,38,0) 50%)}
+.pill{position:absolute;z-index:2;left:24px;bottom:24px;display:flex;align-items:center;gap:12px;padding:12px 20px;border-radius:12px;background:rgba(251,249,246,.9);backdrop-filter:blur(6px);box-shadow:0 10px 15px -3px rgba(0,0,0,.1);font-size:11px;font-weight:600;letter-spacing:.55px;text-transform:uppercase;color:var(--g)}
+.pill b{width:10px;height:10px;border-radius:50%;background:var(--g2);flex:none}
+/* trust */
+.trust{background:var(--alt);padding:40px 72px}
+.trust .r{display:flex;gap:16px;max-width:1136px;margin:0 auto}
+.t{flex:1;display:flex;gap:8px;padding:16px;border-radius:12px;background:rgba(255,255,255,.8);box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.t .e{height:48px;width:48px;border-radius:50%;background:var(--mint);display:flex;align-items:center;justify-content:center;font-size:24px;flex:none}
+.t:nth-child(even) .e{background:rgba(238,224,215,.5)}
+.t h3{font-size:18px;line-height:26px;font-weight:500;color:var(--g)}.t p{font-size:13px;line-height:20px;color:var(--mu)}
+/* story */
+.story{padding:80px 72px}
+.story .g{display:grid;grid-template-columns:5fr 7fr;gap:40px;align-items:center;max-width:1136px;margin:0 auto}
+.simg{position:relative}
+.simg>img{width:100%;aspect-ratio:450/562;object-fit:cover;border-radius:16px;box-shadow:0 10px 15px -3px rgba(0,0,0,.1)}
+.float{position:absolute;right:-24px;bottom:-24px;max-width:320px;background:#fff;padding:16px;border-radius:12px;box-shadow:0 10px 15px -3px rgba(0,0,0,.1)}
+.float h4{font:700 22px/30px var(--serif);color:var(--g)}.float p{font-size:13px;line-height:20px;color:var(--mu)}
+.stxt{padding-left:24px}.stxt .h2{margin:16px 0}.stxt p.b{font-size:18px;line-height:29.25px;margin-bottom:16px}
+.two{display:flex;gap:16px;margin-top:24px}
+.two div{flex:1;background:var(--alt);border-radius:12px;padding:21px 16px 16px;font-size:15px;line-height:24px;color:#1b1c1a}
+.two b{display:block;font-size:11px;letter-spacing:.55px;color:var(--g);text-transform:uppercase;margin-bottom:6px}
+/* product */
+.prod{background:#fff;border-radius:24px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;box-shadow:0 10px 15px -3px rgba(0,0,0,.1)}
+.pimg{position:relative;border-radius:16px;overflow:hidden;background:#efeeeb;aspect-ratio:1}
+.pimg img{width:100%;height:100%;object-fit:cover}
+.pimg span{position:absolute;left:16px;top:16px;padding:6px 14px;border-radius:999px;background:rgba(251,249,246,.9);font-size:11px;font-weight:600;letter-spacing:.55px;text-transform:uppercase;color:var(--g)}
+.pd h3{font:400 28px/36px var(--serif);color:var(--g);margin:4px 0}
+.rt{font-size:11px;font-weight:600;letter-spacing:.66px;text-transform:uppercase;color:var(--mu)}
+.fm{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:24px}
+.fm div{background:var(--alt);border-radius:8px;padding:8px;font-weight:500;font-size:15px;color:var(--g)}
+.fm small{display:block;font-size:11px;font-weight:600;letter-spacing:.66px;text-transform:uppercase;color:var(--mu)}
+.lbl{display:block;margin-top:28px;font-size:11px;font-weight:700;letter-spacing:.55px;text-transform:uppercase;color:var(--mu)}
+.opts{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap}
+.opt{padding:12px;border-radius:12px;background:var(--alt);font-size:14px;font-weight:600;color:#1b1c1a;cursor:pointer;border:0;text-align:left;font-family:inherit}
+.opt small{display:block;font-weight:400;font-size:13px;color:var(--tx)}
+.opt.on{background:var(--mint);box-shadow:0 0 0 2px var(--g);color:var(--g)}
+.buy{display:flex;align-items:center;gap:16px;margin-top:32px;flex-wrap:wrap;font-size:13px;color:var(--mu)}
+/* ingredients */
+.ing{background:var(--alt)}
+.ih{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:24px}
+.ih p.lead{font-size:18px}
+.badge{padding:8px 16px;border-radius:999px;background:var(--sand);color:#4e453f;font-size:11px;font-weight:600;letter-spacing:.55px;text-transform:uppercase;white-space:nowrap}
+.ing .card{padding:16px;border-radius:12px}.ing .card .em{font-size:30px;line-height:36px}
+.ing .card h3{margin:0}.ing .card p{margin-top:8px;min-height:96px}
+.ing .card small{display:block;margin-top:16px;padding-top:12px;font-size:11px;font-weight:600;letter-spacing:.66px;color:var(--mu)}
+.note{display:flex;gap:16px;align-items:center;padding:16px;border-radius:16px;background:rgba(234,232,229,.6);margin-top:24px;box-shadow:inset 0 2px 4px rgba(0,0,0,.05)}
+.note .sh{width:46px;height:51px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;flex:none}
+.note b{display:block;font-size:11px;letter-spacing:.55px;text-transform:uppercase;color:var(--g)}.note p{font-size:15px;line-height:24px}
+.make .card svg{display:none}.make .em{font-size:28px;line-height:24px}
+/* lifestyle */
+.life{position:relative;background:var(--g2);padding:112px 72px;overflow:hidden}
+.life>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6}
+.life:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(24,49,38,.9),rgba(24,49,38,.7) 50%,rgba(24,49,38,0))}
+.lc{position:relative;z-index:2;max-width:576px;background:rgba(251,249,246,.95);backdrop-filter:blur(6px);border-radius:24px;padding:45px 40px 40px;box-shadow:0 25px 50px -12px rgba(0,0,0,.25);margin-left:max(0px,calc((100vw - 1136px)/2))}
+.lc .h2{margin:10px 0}.lc p.lead{margin:6px 0 14px;line-height:29.25px}
+.lc .btns{align-items:center}
+/* reviews */
+.rv{background:var(--alt)}.rv{background:var(--bg)}
+.rc{background:var(--alt);border-radius:16px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 1px 1px rgba(0,0,0,.05)}
+.rc .tp{display:flex;justify-content:space-between;align-items:center}
+.rc .tp span:last-child{background:var(--bg);padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;letter-spacing:.55px;text-transform:uppercase;color:var(--mu)}
+.rc q{display:block;margin:16px 0 0;font:italic 18px/28px var(--serif);color:#1b1c1a;quotes:none}
+.rc .bt{display:flex;justify-content:space-between;align-items:center;margin-top:24px;padding-top:24px;border-top:1px solid rgba(228,226,223,.4)}
+.rc .bt b{font-weight:500;font-size:18px;color:var(--g)}.rc .bt span{font-size:13px;color:var(--mu)}
+/* form */
+.fs{background:var(--alt);padding:80px 24px}
+.fb{max-width:672px;margin:0 auto;background:#fff;border-radius:24px;padding:48px;box-shadow:0 4px 6px -1px rgba(0,0,0,.1)}
+.fb .head{margin-bottom:32px;gap:4px}.fb .head p{font-size:15px;color:var(--mu)}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.fb label{display:block;font-size:11px;font-weight:700;letter-spacing:.55px;text-transform:uppercase;color:var(--mu);margin-bottom:4px}
+.fb label span{color:#ba1a1a;font-weight:400}
+.fb input{width:100%;padding:14px 16px 15px;border:1px solid transparent;border-radius:8px;background:var(--bg);font:400 15px "Plus Jakarta Sans",sans-serif;color:#1b1c1a;box-shadow:0 1px 2px rgba(0,0,0,.05);outline:0}
+.fb input::placeholder{color:#c2c8c2}.fb input:focus{border-color:var(--g2)}
+.fb input.bad{border-color:#ba1a1a}.err{display:block;color:#ba1a1a;font-size:12px;margin-top:4px;min-height:0}
+.fb .btn{width:100%;padding:16px;margin-top:24px}.fb .btn[disabled]{opacity:.7;cursor:wait}
+.fm2{font-size:13px;text-align:center;margin-top:12px;color:var(--mu)}
+/* faq */
+.faq{padding:80px 240px}.faq .in{max-width:800px}
+details{background:var(--alt);border-radius:12px;box-shadow:0 1px 2px rgba(0,0,0,.05);margin-bottom:12px;overflow:hidden}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:16px;font-weight:500;font-size:18px;line-height:26px;color:var(--g);letter-spacing:-.09px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"";width:8px;height:8px;border-right:2px solid var(--g);border-bottom:2px solid var(--g);transform:rotate(45deg);margin:-4px 4px 0 16px;transition:.2s;flex:none}
+details[open] summary:after{transform:rotate(-135deg);margin-top:4px}
+details p{padding:0 16px 16px;font-size:15px;line-height:24px}
+/* cta */
+.cta{background:var(--g);text-align:center;padding:80px 40px}
+.cta .eyebrow{color:#cce9d9}.cta h2{font:400 56px/70px var(--serif);letter-spacing:-1.12px;color:#fff;margin:10px 0}
+.cta p{color:#99b5a5;font-size:18px;line-height:28px;max-width:576px;margin:6px auto 0}
+.cta .btn{background:var(--bg);color:var(--g);padding:16px 36px;margin-top:32px}
+/* contact */
+.ct{background:var(--alt);padding:64px 72px}
+.ct .g{display:flex;gap:40px;align-items:center;max-width:1136px;margin:0 auto}
+.ct .g>div:first-child{flex:1}.ct h2{font:400 28px/36px var(--serif);color:var(--g);margin:6px 0}
+.ct p{font-size:15px;line-height:24px;color:var(--mu)}.ct p b{font-weight:400;color:var(--g)}
+.tiles{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tiles a{display:flex;gap:8px;align-items:center;background:#fff;border-radius:12px;padding:16px;height:72px;box-shadow:0 1px 1px rgba(0,0,0,.05)}
+.tiles small{display:block;font-size:11px;font-weight:600;letter-spacing:.66px;text-transform:uppercase;color:var(--mu)}
+.tiles b{font-weight:500;font-size:15px;color:var(--g);word-break:break-all}.tiles span{font-size:18px}
+/* footer */
+footer{background:var(--alt);padding:0 40px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.fi{max-width:1200px;margin:0 auto;padding:40px 32px}
+.fg{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+.fg h4{font-size:14px;font-weight:600;letter-spacing:.7px;text-transform:uppercase;color:var(--g);margin-bottom:16px}
+.fg p,.fg li{font-size:13px;line-height:20px;list-style:none}.fg li{margin-bottom:4px}.fg p.big{font-size:15px;line-height:24px;color:var(--mu);margin:10px 0}
+.fg .lg{font:700 22px/30px var(--serif);color:var(--g);letter-spacing:-.55px}
+.fg .m{color:var(--mu);font-weight:500}.fg .m+b{font-weight:500;color:var(--g)}
+.fg .box{margin-top:8px;padding:17px;border:1px solid rgba(228,226,223,.4);border-radius:8px;background:var(--bg)}
+.fg .box b{display:block;font-size:11px;letter-spacing:.55px;text-transform:uppercase;color:var(--g);margin-bottom:4px}
+.fb2{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(228,226,223,.4);margin-top:40px;padding-top:17px;font-size:13px;color:var(--mu)}
+.fb2 i{font-style:normal;color:#c2c8c2;margin:0 8px}
+@media(max-width:1024px){.faq{padding:80px 24px}.hero,.trust,.story,.ct,.life{padding-left:32px;padding-right:32px}.grid4,.fg{grid-template-columns:1fr 1fr}.trust .r{flex-wrap:wrap}.t{flex:1 1 45%}}
+@media(max-width:900px){.links{display:none}.hero .g,.story .g,.prod,.ct .g{grid-template-columns:1fr;display:grid}.pic{margin:0}h1{font-size:44px;line-height:54px}.float{right:12px;bottom:-24px}.story{padding-bottom:104px}.stxt{padding-left:0}.ih{flex-direction:column;align-items:flex-start}.prod{padding:24px}.life{padding-top:64px;padding-bottom:64px}.life:before{background:rgba(24,49,38,.65)}.lc{margin:0}}
+@media(max-width:600px){.sec{padding:56px 16px}.in{padding:0}.grid4,.fg,.tiles,.fr{grid-template-columns:1fr}.hero,.trust,.story,.ct,.life{padding-left:16px;padding-right:16px}.top{font-size:9px}.hb .btn{display:none}.h2{font-size:30px;line-height:38px}.cta h2{font-size:38px;line-height:48px}.two{flex-direction:column}.fb{padding:28px 20px}.lc{padding:32px 24px}.t{flex:1 1 100%}.faq{padding:56px 16px}summary{font-size:16px}.nav{padding:0 16px}.logo{font-size:18px}.pill{left:12px;right:12px;bottom:12px;font-size:10px;padding:10px 14px}}
+</style>
+</head>
+<body id="top">
+<header>
+  <div class="top">Thoughtfully crafted natural care • From the heart of Kerala • Free enquiries &amp; direct orders</div>
+  <div class="nav">
+    <a href="#top" class="logo"><img alt="" src="https://www.figma.com/api/mcp/asset/e0ab0e6a-b032-4cb7-808a-0c719bb42a15/c5ea0.png">UNIQUE BOTANICALS</a>
+    <nav class="links"><a href="#top">Home</a><a href="#story">Our Story</a><a href="#why">Why Us</a><a href="#ingredients">Ingredients</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+    <div class="hb"><a class="btn" href="#enquiry">Order Now</a><a class="circ" href="#enquiry" aria-label="Order">→</a></div>
+  </div>
+</header>
+
+<section class="hero"><div class="g">
+  <div>
+    <span class="chip">🌿 Natural Coconut Oil Soap</span>
+    <h1>Pure Care,<br><em>Inspired by Nature.</em></h1>
+    <p class="lead">Thoughtfully crafted with the goodness of coconut oil and nature-inspired ingredients for a simple, refreshing everyday cleansing experience.</p>
+    <div class="btns"><a class="btn" href="#enquiry">Order Now</a><a class="btn w" href="#story">Discover Our Story</a></div>
+    <div class="spec"><span>100g Bar</span><i>•</i><span>Pure Coconut Goodness</span><i>•</i><span>Gentle Daily Cleansing</span></div>
+  </div>
+  <div class="pic"><img alt="White oval coconut oil soap bar on a teak wood tray with a cracked coconut half" src="https://www.figma.com/api/mcp/asset/4a8b8abc-a34e-4775-ab3e-704a0ad1aebb/acdd3.png"><div class="pill"><b></b>Honest cleansing • No over-complication</div></div>
+</div></section>
+
+<section class="trust"><div class="r">
+  <div class="t"><span class="e">🌿</span><div><h3>Nature Inspired</h3><p>Mindfully sourced botanicals</p></div></div>
+  <div class="t"><span class="e">🥥</span><div><h3>Coconut Oil Goodness</h3><p>Classic nourishing touch</p></div></div>
+  <div class="t"><span class="e">🧼</span><div><h3>Gentle Everyday Care</h3><p>Balanced daily cleansing</p></div></div>
+  <div class="t"><span class="e">🤍</span><div><h3>Made With Care</h3><p>Simple, honest methods</p></div></div>
+</div></section>
+
+<section class="story" id="story"><div class="g">
+  <div class="simg"><img alt="Grated coconut, earthenware bowl, oil bottle and palm leaves on linen" src="https://www.figma.com/api/mcp/asset/87b6dd58-b034-443a-93ca-5bafdfa01b69/f2849.png">
+    <div class="float"><h4>Simplicity in every lather.</h4><p>Honoring regional coconut heritage and honest cleansing essentials.</p></div></div>
+  <div class="stxt">
+    <div class="eyebrow">Nature Inspired • Simply Crafted</div>
+    <h2 class="h2">Where Nature Meets Everyday Care</h2>
+    <p class="b">Our idea began with something simple — bringing the goodness of nature into an everyday essential. Inspired by coconut oil and traditional natural care, we aim to create a soap that feels simple, honest and thoughtfully made.</p>
+    <p class="b">No unnecessary complexity. No confusing jargon or exaggerated promises. Just a carefully considered product for everyday cleansing that respects the quiet, restorative rhythm of your daily shower.</p>
+    <div class="two"><div><b>Origin</b>Inspired by the coastal coconut palms of Southern India.</div><div><b>Ethos</b>Thoughtful simplicity with gentle everyday skin compatibility.</div></div>
+  </div>
+</div></section>
+
+<section class="sec" id="why" style="background:var(--alt)"><div class="in">
+  <div class="head"><span class="eyebrow">Simple &amp; Timeless</span><h2 class="h2">Why Coconut Oil?</h2><p class="lead">An age-old cornerstone of natural grooming, celebrated for simplicity, gentle hydration, and a clean rinse.</p></div>
+  <div class="grid4">
+    <div class="card"><div class="ico">💧</div><h3>Nourishing Feel</h3><p>Coconut oil is traditionally valued for its skin-conditioning properties, helping skin feel soft and comforted.</p><span class="tag">Skin Conditioning</span></div>
+    <div class="card"><div class="ico s">🧼</div><h3>Gentle Everyday Care</h3><p>Designed around a simple everyday cleansing experience that leaves skin clean without feeling stripped.</p><span class="tag">Daily Balance</span></div>
+    <div class="card"><div class="ico">🌿</div><h3>Nature Inspired</h3><p>Built around the familiar goodness of coconut and carefully selected ingredients from plant-based origins.</p><span class="tag">Mindful Formulation</span></div>
+    <div class="card"><div class="ico s">✨</div><h3>Fresh &amp; Simple</h3><p>A refreshing addition to your everyday bathing routine, yielding a subtle, comforting lather and mild finish.</p><span class="tag">Crisp Cleanliness</span></div>
+  </div>
+</div></section>
+
+<section class="sec"><div class="in">
+  <div class="head"><span class="eyebrow">The Signature Bar</span><h2 class="h2">Simple Soap. Thoughtful Ingredients.</h2></div>
+  <div class="prod">
+    <div class="pimg"><img alt="Single white oval coconut soap bar on a wood platter with a coconut half" src="https://www.figma.com/api/mcp/asset/c1d84a97-6898-4d35-a3aa-19a371e619ad/acdd3.png"><span>100g Solid Cleansing Bar</span></div>
+    <div class="pd">
+      <div><span class="stars">★★★★★</span> &nbsp;<span class="rt">Everyday Natural Care</span></div>
+      <h3>Natural Coconut Oil Soap</h3>
+      <p style="color:var(--mu);font-size:15px">A simple everyday soap inspired by the natural goodness of coconut oil.</p>
+      <div class="fm"><div><small>Lather</small>Soft, Gentle Bubble</div><div><small>Texture</small>Smooth White Oval</div><div><small>Fragrance</small>Mild Coconut Touch</div><div><small>Skin Feel</small>Clean &amp; Non-Drying</div></div>
+      <span class="lbl">Choose Option</span>
+      <div class="opts"><button type="button" class="opt on">Single Bar<small>100g Daily Unit</small></button><button type="button" class="opt">Trio Pack<small>3 × 100g Bundle</small></button></div>
+      <div class="buy"><a class="btn" href="#enquiry">Order Now</a><span>Batch inquiries &amp; direct orders available below.</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec ing" id="ingredients"><div class="in">
+  <div class="ih"><div><span class="eyebrow">Purity &amp; Disclosure</span><h2 class="h2" style="margin:6px 0">What Goes Into Our Soap?</h2><p class="lead">Openness and simplicity at every step.</p></div><span class="badge">Honest Ingredient Promise</span></div>
+  <div class="grid4" style="padding-top:24px">
+    <div class="card"><div class="em">🥥</div><h3>Coconut Oil</h3><p>The core nourishing foundation. Traditionally utilized to yield a thick, rich bubble and gentle emollient touch.</p><small>Primary Foundation</small></div>
+    <div class="card"><div class="em">🌿</div><h3>Botanical Ingredients</h3><p>Gentle plant essences thoughtfully paired to lend an authentic and mild sensory profile to each wash.</p><small>Harmonizing Essences</small></div>
+    <div class="card"><div class="em">🧈</div><h3>Plant-Based Oils</h3><p>Wholesome plant-derived lipid partners chosen to support a soft, moisturizing lather on your skin.</p><small>Lather Enricheners</small></div>
+    <div class="card"><div class="em">🌱</div><h3>Nature-Inspired Elements</h3><p>Hand-curated natural components that keep the formulation clean, grounded, and refreshingly straightforward.</p><small>Complementary Notes</small></div>
+  </div>
+  <div class="note"><div class="sh">🛡️</div><div><b>Packaging Transparency Note</b><p>Final ingredients and detailed formulation specifics will be provided according to the actual product formulation and printed clearly on every retail packaging.</p></div></div>
+</div></section>
+
+<section class="sec make"><div class="in">
+  <div class="head"><span class="eyebrow">Process &amp; Care</span><h2 class="h2">Our Natural Making Process</h2><p style="font-size:15px;color:var(--mu)">Prepared with care and consistency to produce a dependable daily cleansing bar.</p></div>
+  <div class="grid4">
+    <div class="card"><div class="em">🌴</div><h3>Select</h3><p>Thoughtfully selected ingredients sourced from reliable plant and coconut origins.</p></div>
+    <div class="card"><div class="em">🥣</div><h3>Prepare</h3><p>Prepared with care and consistency to ensure wholesome blending of gentle oils.</p></div>
+    <div class="card"><div class="em">🧼</div><h3>Craft</h3><p>Carefully made into an everyday cleansing bar with an ergonomic, tactile white oval shape.</p></div>
+    <div class="card"><div class="em">📦</div><h3>Pack</h3><p>Packed with dedicated attention to quality, sealed cleanly for fresh daily enjoyment.</p></div>
+  </div>
+</div></section>
+
+<section class="life"><img alt="" src="https://www.figma.com/api/mcp/asset/aae2576e-1513-414a-894e-f46e0cd02f04/33fc6.png">
+  <div class="lc"><span class="eyebrow">Everyday Bathing Ritual</span>
+    <h2 class="h2">Bring a Little Nature Into Your Everyday.</h2>
+    <p class="lead">Simple moments of care can start with simple ingredients. Elevate your daily routine with the tranquil presence of cold-pressed purity.</p>
+    <div class="btns"><a class="btn" href="#enquiry">Shop / Order Now</a><span class="rt">Direct Batch Inquiries</span></div>
+  </div></section>
+
+<section class="sec rv" id="reviews"><div class="in">
+  <div class="head"><span class="eyebrow">Community Feedback</span><h2 class="h2">Loved for Its Simplicity</h2><p style="font-size:15px;color:var(--mu)">Sample feedback reflecting the sensory experience of our everyday bar.</p></div>
+  <div class="grid4" style="grid-template-columns:repeat(3,1fr)">
+    <div class="rc"><div><div class="tp"><span class="stars">★★★★★</span><span>Sample Review</span></div><q>“Loved the simple natural feel and the coconut-inspired fragrance.”</q></div><div class="bt"><b>Sample Customer</b><span>Kerala</span></div></div>
+    <div class="rc"><div><div class="tp"><span class="stars">★★★★★</span><span>Sample Review</span></div><q>“The product presentation feels clean and genuine.”</q></div><div class="bt"><b>Sample Customer</b><span>Bengaluru</span></div></div>
+    <div class="rc"><div><div class="tp"><span class="stars">★★★★★</span><span>Sample Review</span></div><q>“A simple soap with a really pleasant everyday feel.”</q></div><div class="bt"><b>Sample Customer</b><span>Mumbai</span></div></div>
+  </div>
+</div></section>
+
+<section class="fs" id="enquiry"><div class="fb">
+  <div class="head"><span class="eyebrow">Direct Enquiries</span><h2 class="h2">Interested in Our Soap?</h2><p>Leave your details and we’ll get in touch with you.</p></div>
+  <form id="f" novalidate>
+    <div><label for="n">Full Name <span>*</span></label><input id="n" name="Name" type="text" placeholder="e.g. Priya Sharma" autocomplete="name"><span class="err" id="en"></span></div>
+    <div class="fr">
+      <div><label for="e">Email Address <span>*</span></label><input id="e" name="Email" type="email" placeholder="name@example.com" autocomplete="email"><span class="err" id="ee"></span></div>
+      <div><label for="p">Phone Number <span>*</span></label><input id="p" name="Phone" type="tel" inputmode="numeric" placeholder="10-digit mobile number" autocomplete="tel"><span class="err" id="ep"></span></div>
+    </div>
+    <button class="btn" id="b" type="submit"><span id="bt">Send Enquiry</span> <span>→</span></button>
+    <p class="fm2" id="st" role="status"></p>
+  </form>
+</div></section>
+
+<section class="faq" id="faq"><div class="in">
+  <div class="head" style="margin-bottom:48px"><span class="eyebrow">Questions &amp; Clarity</span><h2 class="h2">Frequently Asked Questions</h2><p style="font-size:15px;color:var(--mu)">Clear, straightforward answers about our natural coconut oil bar.</p></div>
+  <details><summary>What is this soap made with?</summary><p>It is built around cold-pressed coconut oil, paired with plant-based oils and gentle botanical ingredients.</p></details>
+  <details><summary>Is it suitable for everyday use?</summary><p>Yes. It is designed as a simple everyday cleansing bar that leaves skin clean without feeling stripped.</p></details>
+  <details><summary>Is it suitable for sensitive skin?</summary><p>We aim for gentle everyday skin compatibility. If you have particular concerns, please check the final ingredients on the packaging or ask us directly.</p></details>
+  <details><summary>Does the soap contain coconut oil?</summary><p>Yes, coconut oil is the core nourishing foundation of the bar.</p></details>
+  <details><summary>How can I order?</summary><p>Fill in the enquiry form above with your name, email and phone number, and we’ll continue the conversation with you on WhatsApp.</p></details>
+  <details><summary>Where can I find the complete ingredients?</summary><p>Final ingredients and formulation details are printed clearly on every retail packaging.</p></details>
+</div></section>
+
+<section class="cta"><span class="eyebrow">Care in its purest form</span><h2>Choose Simple.<br>Choose Nature.</h2><p>Thoughtfully created for everyday cleansing, inspired by the goodness of coconut.</p><a class="btn" href="#enquiry">Order Now</a></section>
+
+<section class="ct" id="contact"><div class="g">
+  <div><span class="eyebrow">Get in Touch</span><h2>Let’s Connect</h2><p>Founder &amp; Owner: <b>S. Uma</b>. Have questions about custom gifting, retail batches, or our botanical formulation philosophy? We welcome your direct notes.</p></div>
+  <div class="tiles">
+    <a href="tel:+917695859128"><span>📞</span><div><small>Phone</small><b>+91 76958 59128</b></div></a>
+    <a href="mailto:uma740104@gmail.com"><span>✉️</span><div><small>Email</small><b>uma740104@gmail.com</b></div></a>
+    <a href="https://wa.me/918925403848" target="_blank" rel="noopener"><span>💬</span><div><small>WhatsApp</small><b>+91 89254 03848</b></div></a>
+    <a href="https://instagram.com/uma740104" target="_blank" rel="noopener"><span>📷</span><div><small>Instagram</small><b>@uma740104</b></div></a>
+  </div>
+</div></section>
+
+<footer><div class="fi">
+  <div class="fg">
+    <div><div class="lg">UNIQUE BOTANICALS</div><p class="big">Pure care, inspired by nature.</p><p style="color:var(--tx);line-height:21px">Handcrafted cold-pressed coconut oil soap by S. Uma, created sustainably with botanical heritage from lush groves in Kerala.</p></div>
+    <div><h4>Quick Links</h4><ul><li><a href="#top">Home</a></li><li><a href="#story">Our Story</a></li><li><a href="#why">Why Us</a></li><li><a href="#ingredients">Ingredients</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div>
+    <div><h4>Customer Support</h4><ul><li><span class="m">Founder:</span> <b>S. Uma</b></li><li><span class="m">Phone:</span> <a href="tel:+917695859128">+91 76958 59128</a></li><li><span class="m">Email:</span> <a href="mailto:uma740104@gmail.com">uma740104@gmail.com</a></li><li><span class="m">WhatsApp:</span> <a href="https://wa.me/918925403848">+91 89254 03848</a></li></ul>
+      <p style="margin-top:12px"><b style="font-size:11px;letter-spacing:.55px;text-transform:uppercase;color:var(--g)">Connect With Us</b><br><a style="text-decoration:underline;text-decoration-color:#c2c8c2" href="https://instagram.com/uma740104">Instagram (@uma740104)</a></p></div>
+    <div><h4>Our Philosophy</h4><p style="line-height:21px">Zero artificial lathering agents. 100% pure edible-grade cold pressed coconut oil and therapeutic native botanicals.</p><div class="box"><b>Direct Enquiry &amp; Orders</b><p style="color:var(--mu)">Small batch crafting ensuring farm-to-shower transparency.</p></div></div>
+  </div>
+  <div class="fb2"><span>Privacy Policy<i>•</i>Terms &amp; Conditions</span><span>© 2026 UNIQUE Botanicals. All rights reserved.</span></div>
+</div></footer>
+
+<script>
+(function(){
+  var SCRIPT_URL="https://script.google.com/macros/s/AKfycbyZyfxUCtvrvbtC2ci-vHASbuHml7QLKCHOs-yWWvCGTMrD55H_W49NBS3ChtPa-wb0/exec";
+  var WA_NUMBER="917695859128";
+  var $=function(i){return document.getElementById(i)};
+  document.querySelectorAll(".opt").forEach(function(o){o.addEventListener("click",function(){document.querySelectorAll(".opt").forEach(function(x){x.classList.remove("on")});o.classList.add("on")})});
+  function setErr(id,eid,msg){$(id).classList.toggle("bad",!!msg);$(eid).textContent=msg||""}
+  $("f").addEventListener("submit",function(ev){
+    ev.preventDefault();
+    var name=$("n").value.trim(),email=$("e").value.trim(),phone=$("p").value.replace(/[\s-]/g,"").replace(/^(\+?91)(?=\d{10}$)/,"");
+    var ok=true;
+    setErr("n","en",name.length<2?(ok=false,"Please enter your name."):"");
+    setErr("e","ee",!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)?(ok=false,"Enter a valid email."):"");
+    setErr("p","ep",!/^\d{10}$/.test(phone)?(ok=false,"Enter a 10-digit number."):"");
+    if(!ok)return;
+    var btn=$("b");btn.disabled=true;$("bt").textContent="Sending...";$("st").textContent="";
+    var qs=new URLSearchParams({Name:name,Email:email,Phone:phone}).toString();
+    var msg="Hi, I'm interested in your coconut oil soap.\nName: "+name+"\nEmail: "+email+"\nPhone: "+phone;
+    var wa="https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(msg);
+    var go=function(){$("st").textContent="Thank you! Opening WhatsApp...";window.location.href=wa};
+    var save=fetch(SCRIPT_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:qs,keepalive:true}).catch(function(){});
+    var wait=new Promise(function(r){setTimeout(r,4000)});
+    Promise.race([save,wait]).then(go,go);
+  });
+})();
+</script>
+</body>
+</html>
